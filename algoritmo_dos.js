@@ -1,20 +1,20 @@
 function valorTotal() 
 {
     document.getElementById("igual").innerHTML = "";
-    igual = "N";
-    numeros = [];
-    num1 = document.getElementById("valor_uno").value;
-    num2 = document.getElementById("valor_dos").value;
-    num3 = document.getElementById("valor_tres").value;
-    num4 = document.getElementById("valor_cuatro").value;
+    let igual = "N";
+    let numeros = [];
+    let num1 = document.getElementById("valor_uno").value;
+    let num2 = document.getElementById("valor_dos").value;
+    let num3 = document.getElementById("valor_tres").value;
+    let num4 = document.getElementById("valor_cuatro").value;
   
     numeros.push(parseInt(num1));
     numeros.push(parseInt(num2));
     numeros.push(parseInt(num3));
     numeros.push(parseInt(num4));
   
-    Menor = Math.min.apply(null, numeros);
-    Mayor = Math.max(...numeros);
+    let  Menor = Math.min.apply(null, numeros);
+    let Mayor = Math.max(...numeros);
     console.log(Mayor);
     console.log(Menor);
     for (i = 0; i < numeros.length; i++) 
